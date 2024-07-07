@@ -1,0 +1,965 @@
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+   
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:url" content="https://ums.asu.edu.eg/" />
+    <meta property="og:image" content="images/logoums (1).png" />
+    <meta property="og:description" content="Digital Management System of Ain Shams University" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="640" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>تسجيل الدخول | منصة الجامعة الذكية </title>
+    
+
+<!-- Normalize CSS -->
+<link rel="stylesheet" href="assets/css/AR/normalize.css">
+<!-- Main CSS -->
+<link rel="stylesheet" href="assets/css/AR/main.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="assets/css/AR/bootstrap.min.css">
+<!-- Animate CSS -->
+<link rel="stylesheet" href="assets/css/AR/animate.min.css">
+<!-- Font-awesome CSS-->
+<link rel="stylesheet" href="assets/fontawesome-free-6.1.1-web/css/all.min.css" />
+<link rel="stylesheet" href="assets/fontawesome-free-6.1.1-web/css/fontawesome.min.css" />
+<!-- Owl Caousel CSS -->
+<link rel="stylesheet" href="assets/vendor/AR/OwlCarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/vendor/AR/OwlCarousel/owl.theme.default.min.css">
+<!-- Main Menu CSS -->
+<link rel="stylesheet" href="assets/css/AR/meanmenu.min.css">
+<!-- nivo slider CSS -->
+<link rel="stylesheet" href="assets/vendor/AR/slider/css/nivo-slider.css" type="text/css" />
+<link rel="stylesheet" href="assets/vendor/AR/slider/css/preview.css" type="text/css" media="screen" />
+<!-- Datetime Picker Style CSS -->
+<link rel="stylesheet" href="assets/css/AR/jquery.datetimepicker.css">
+<!-- Select2 CSS -->
+<link rel="stylesheet" href="assets/css/AR/select2.min.css">
+<!-- Magic popup CSS -->
+<link rel="stylesheet" href="assets/css/AR/magnific-popup.css">
+<!-- Switch Style CSS -->
+<link rel="stylesheet" href="assets/css/AR/hover-min.css">
+<!-- ReImageGrid CSS -->
+<link rel="stylesheet" href="assets/css/AR/reImageGrid.css">
+<!-- Nouislider Style CSS -->
+<link rel="stylesheet" href="assets/vendor/AR/noUiSlider/nouislider.min.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/AR/style.css">
+
+
+
+<link href="Content/fontawesome-all.css" rel="stylesheet" />
+<!--Kendo-->
+<link href="Content/kendo/2018.3.1017/kendo.common-bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="Content/kendo/2018.3.1017/kendo.mobile.all.min.css" rel="stylesheet" type="text/css" />
+<link href="Content/kendo/2018.3.1017/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
+<link href="Content/kendo/2018.3.1017/kendo.bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="Content/kendo/2018.3.1017/kendo.dataviz.bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!--Kendo custom styles-->
+<style>
+    .k-dropdown .k-state-focused, .k-filebrowser-dropzone, .k-list > .k-state-hover, .k-listbox .k-item:hover:not(.k-state-disabled), .k-mobile-list .k-edit-label.k-check:active, .k-mobile-list .k-item > .k-label:active, .k-mobile-list .k-item > .k-link:active, .k-mobile-list .k-recur-view .k-check:active, .k-pager-wrap .k-link:hover, .k-scheduler .k-scheduler-toolbar ul li.k-state-hover, .k-splitbar-horizontal-hover:hover, .k-splitbar-vertical-hover:hover, .k-state-hover, .k-state-hover:hover {
+        background-color: #0021473d;
+    }
+    .k-list > .k-state-focused.k-state-selected, .k-listview > .k-state-focused.k-state-selected, .k-state-focused.k-state-selected, td.k-state-focused.k-state-selected {
+        box-shadow: inset 0 0 10px 3px #002147;
+    }
+    .k-draghandle.k-state-selected:hover, .k-ghost-splitbar-horizontal, .k-ghost-splitbar-vertical, .k-list > .k-state-highlight, .k-list > .k-state-selected, .k-marquee-color, .k-panel > .k-state-selected, .k-scheduler .k-scheduler-toolbar .k-state-selected, .k-scheduler .k-today.k-state-selected, .k-state-selected, .k-state-selected:link, .k-state-selected:visited, .k-tool.k-state-selected {
+        background-color: #002147;
+        border-color: #002147;
+    }
+    .k-link:link, .k-link:visited, .k-nav-current.k-state-hover .k-link {
+        color: #002147;
+    }
+</style>
+    <link href="Content/kendo/2018.3.1017/kendo.rtl.min.css" rel="stylesheet" type="text/css" />
+<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="Scripts/modernizr-2.8.3.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script src="Scripts/kendo/2018.3.1017/jszip.min.js"></script>
+<script src="Scripts/kendo/2018.3.1017/kendo.all.min.js"></script>
+<script src="Scripts/kendo/2018.3.1017/kendo.dropdownlist.min.js"></script>
+<script src="Scripts/kendo/2018.3.1017/kendo.aspnetmvc.min.js"></script>
+<script src="Scripts/modernizr-2.8.3.js"></script>
+<script src="Scripts/kendo.modernizr.custom.js"></script>
+
+
+    <!-- BEGIN SWEETALERT -->
+    <link href="assets/SweetAlert/sweetalert2.min.css" rel="stylesheet" />
+    <script src="assets/SweetAlert/sweetalert2.min.js"></script>
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+
+    <script src="assets/SweetAlert/sweetalert.min.js"></script>
+    <!-- Owl Cauosel JS -->
+    <script src="assets/vendor/AR/OwlCarousel/owl.carousel.min.js" type="text/javascript"></script>
+</head>
+<!-- Head End -->
+<!-- Body Start -->
+
+<body dir="rtl">
+    <div id="preloader"></div>
+
+    <div id="wrapper" style="position: relative;">  
+
+        <!-- Header Start -->
+
+
+<link href="assets/css/Menu.css" rel="stylesheet" />
+<style>
+
+    .mega-menu .preview {
+        width: 200px;
+        padding: 20px;
+    }
+
+    .preview {
+        display: none;
+        color: #efe7c6;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .fadeIn {
+        animation: fadeIn 0.5s ease;
+    }
+
+    nav#desktop-nav ul li a {
+        padding: 30px 20px 0px 0px;
+    }
+</style>
+<header>
+    <div id="header1" class="header2-area">
+        
+
+<script src="assets/js/Language.js"></script>
+<style>
+    .main-menu-area .header-search{
+        margin:0px 0px !important;
+    }
+</style>
+<!-- TopHeader Start -->
+<div class="header-top-area">
+    <div class="container">
+        <div class="top-bar-border">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                    <div class="header-top-left">
+                        <ul class="Mobile-Hidden">
+                            <li><img style="height:25px;" src="images/arms_of_Egypt_(Official).svg" /></li>
+                            <li style="text-transform:capitalize;"><i class="fa fa-play-circle" aria-hidden="true"></i><a href="App/VideosSection">فيديوهات إرشادية</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="header-top-right">
+                        <ul class="main-menu-area">
+                            <li>
+                                <div class="header-search d-none d-lg-block">
+                                    <form action="Search/GetSearchResult" method="GET">
+                                        <input type="text" class="search-form" name="UserQuery" placeholder="بحث" required="">
+                                        <a href="#" class="search-button" id="search-button"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                    </form>
+                                </div>
+                            </li>
+                                <li>
+                                    <a class="login-btn-area" href="App/Login_Form" id="login-button"><i class="fa fa-lock"></i> تسجيل الدخول</a>
+                                </li>
+
+
+                                <li><a class="login-btn-area" onclick="SelectedIndexChanged('en'); location.reload();" href="#"> <img src="images/Flags/gb.png" alt="English">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- TopHeader End -->
+
+
+        <!-- MenuHeader Start -->
+        <div class="main-menu-area bg-textPrimary" id="sticker">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-sm-2">
+                        <div class="logo-area">
+                            <a href=""><img class="img-responsive" src="images/logoums (1).png" alt="logo"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-10 col-lg-12 col-md-12 col-sm-10">
+                        <div class="row">
+                            <h2 class="p-2 topTitle" style="color:#FFFFFF;margin:0 0 -60px 0;">نظام إدارة جامعة عين شمس</h2>
+                            <nav id="desktop-nav" style="width:auto;margin:30px 0px 0px 0px;">
+                                <ul>
+                                    <li class="active">
+                                        <a class="fa fa-home" href=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">مراكز الجامعة والكليات</a>
+                                        <ul>
+                                            <li class="has-child-menu">
+                                                <a href="#">مؤتمر الجامعة</a>
+                                                <ul class="thired-level">
+                                                    <li><a href="RequestServiceUniversityConference">طلب الإشتراك</a></li>
+                                                    <li><a href="TrackExternalServices/Track">متابعة طلب الإشتراك</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-child-menu">
+                                                <a href="#">مجلة بحوث التعليم والإبتكار</a>
+                                                <ul class="thired-level">
+                                                    <li><a href="ResearchJournalPublication">طلب الإشتراك</a></li>
+                                                    <li><a href="TrackExternalServices/Track">متابعة طلب الإشتراك</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-child-menu">
+                                                <a href="#">مركز تعليم الكبار</a>
+                                                <ul class="thired-level">
+                                                    <li><a href="AdultEducationCenter">طلب الإشتراك</a></li>
+                                                    <li><a href="AdultEducationCenter/Track">متابعة طلب الإشتراك</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-child-menu">
+                                                <a href="#">مركز ذوى الإعاقة</a>
+                                                <ul class="thired-level">
+                                                    <li><a href="StudentDisabilityCenter">التسجيل فى دورة ICDL محلية</a></li>
+                                                    <li><a href="AdultEducationCenter/Track">متابعة طلب الإشتراك</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-child-menu">
+                                                <a href="#">طلب الالتحاق بالتعلُم المدمج</a>
+                                                <ul class="thired-level">
+                                                    
+                                                    <li><a href="BlendedLearningAdmission">طلب الالتحاق</a></li>
+                                                    <li><a href="BlendedLearningAdmission/Track">متابعة التسجيل</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-child-menu">
+                                                <a href="#">خدمات رابطة الخريجين</a>
+                                                <ul class="thired-level">
+                                                    <li><a href="GraduateAssociationSubscription">انضم الان</a></li>
+                                                    <li><a href="GeneralQuestionnaire">رأيك يهمنا</a></li>
+                                                    <li><a href="GraduateAssociationSubscription/GraduateRamadan">سهرة رمضانية وسحور</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-child-menu">
+                                                <a href="#">خدمات مراكز الجامعة</a>
+                                                <ul class="thired-level">
+                                                    <li><a href="UniversityCentersService">طلب الخدمة</a></li>
+                                                    <li><a href="TrackExternalServices/Track">متابعة طلب الخدمة</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="CourseraApplication">حجز Coursera</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">خدمات الكليات</a>
+                                        <ul>
+                                            <li class="has-child-menu">
+                                                <a href="#">الخريجين</a>
+                                                <ul class="thired-level">
+                                                    <li><a href="RequestService">شهادة تخرج عربى او انجليزى</a></li>
+                                                    <li><a href="RequestService">استخراج شهاده تقديرات عربى</a></li>
+                                                    <li><a href="RequestService">مقابل سحب ملف الخريجين</a></li>
+                                                    <li><a href="RequestService">استخراج شهادة تقديرات انجليزى</a></li>
+                                                    <li><a href="RequestService">خدمات أخرى</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-child-menu">
+                                                <a href="#">تعليم عالى</a>
+                                                <ul class="thired-level">
+                                                    <li><a href="RequestService">بيان نجاح</a></li>
+                                                    <li><a href="RequestService">رسوم ايقاف قيد او عذر عن عام دراسى كامل</a></li>
+                                                    <li><a href="RequestService">شهادة فصل او بيان حاله</a></li>
+                                                    <li><a href="RequestService">رسوم امتحان ماده تخلف للطلاب الراسبين</a></li>
+                                                    <li><a href="RequestService">خدمات أخرى</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-child-menu">
+                                                <a href="#">الدراسات العليا</a>
+                                                <ul class="thired-level">
+                                                    <li><a href="RequestService">تسجيل ماجستير نصف عام</a></li>
+                                                    <li><a href="RequestService">تسجيل دكتوراه نصف عام</a></li>
+                                                    <li><a href="RequestService">مد فتره تسجيل ماجستير او دكتوراه</a></li>
+                                                    <li><a href="RequestService">شهادة مؤقته ماجستير عربى او انجليزى</a></li>
+                                                    <li><a href="RequestService">مد فتره تسجيل ماجستير او دكتوراه</a></li>
+                                                    <li><a href="RequestService">شهادة مؤقته دبلومات عربى او انجليزى</a></li>
+                                                    <li><a href="RequestService">خدمات أخرى</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="has-child-menu">
+                                                <a href="#">متابعة طلب الخدمة</a>
+                                                <ul class="thired-level">
+                                                    <li><a href="TrackExternalServices/Track">متابعة طلب الخدمة برقم التسجيل</a></li>
+                                                    <li><a href="TrackExternalServices/GetExternalServicesHistory">متابعة طلب الخدمة بالرقم القومي</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">التسجيل المبكر</a>
+                                        <ul>
+
+                                            <li class="has-child-menu">
+                                                <a href="#">لخريجي الثانوية العامة</a>
+                                                <ul class="thired-level">
+                                                    <li><a href="ApplicationRegister">طلب تسجيل مبكر</a></li>
+                                                    <li><a href="ApplicationRegister/Track">متابعة التسجيل</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-child-menu">
+                                                <a href="#">لخريجي الجامعة</a>
+                                                <ul class="thired-level">
+                                                    <li><a href="PGApplicationRegister">طلب تسجيل</a></li>
+                                                    <li><a href="PGApplicationRegister/Track">متابعة التسجيل</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-child-menu">
+                                                <a href="#">لخريجى الشهادة المعادلة</a>
+                                                <ul class="thired-level">
+                                                    <li><a href="ApplicationRegister">طلب تسجيل مبكر</a></li>
+                                                    <li><a href="ApplicationRegister/Track">متابعة التسجيل</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- student menu -->
+                                    <li>
+                                        <a href="#">المرحلة الجامعية</a>
+
+                                        <ul class="mega-menu-area row pc-service-menu">
+                                            <li class="col">
+                                                <a data-preview="تسجيل المقررات الدراسية لطلاب الساعات المعتمدة" href="#">تسجيل المقررات الدراسية</a>
+                                                <a data-preview="تعرف على جدولك للفصل الدراسى الحالى" href="#">جدولي</a>
+                                                <a data-preview="احصل على رمز QR لاستخدامه في تسجيل الحضور سواء فى المحاضرات او الامتحانات" href="#">رمز ال QR</a>
+                                                <a data-preview="اطلع على درجات اعمال السنة بتفاصيل مقررات كل فصل دراسي" href="#">درجات أعمال السنة</a>
+                                                <a data-preview="يستطيع طلاب الساعات المعتمدة تقديم طلب للانسحاب من المقررات الدراسية" href="#">طلب انسحاب من مقرر</a>
+                                                <a data-preview="يمكنك معرفة اذا كان لديك أية انذارات أكاديمية" href="#">انذار أكاديمى</a>
+                                                <a data-preview="تعرف على تفاصيل دورات التربية العسكرية" href="#">بيانات دورة التربية العسكرية</a>
+                                            </li>
+                                            <li class="col">
+                                                <a data-preview="يمكنك تقديم التماس علي المقررات المطلوبة منك فى العام الدراسي" href="#">الإلتماسات</a>
+                                                <a data-preview="التشعيب لأقسام الكلية" href="#">التشعيب</a>
+                                                <a data-preview="اطلع على مقرراتك الدراسية للعام الأكاديمي الحالي" href="#">المقررات</a>
+                                                <a data-preview="احصل على درجات العام الدراسي بتفاصيل مقررات كل فصل دراسي" href="#">الدرجات</a>
+                                                <a data-preview="طلب فتح مقرر للتسجيل" href="#">طلب فتح مقرر للتسجيل</a>
+                                                <a data-preview="اطلع على جوائزك" href="#">الجوائز</a>
+                                                <a data-preview="التسجيل في دورة التربية العسكرية للطلاب الذكور" href="#">دورات التربية العسكرية المسجلة</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- PG menu -->
+                                    <li>
+                                        <a href="#">الدراسات العليا</a>
+                                        <ul class="pc-service-menu">
+                                            <li><a data-preview="اطلع على مقرراتك الدراسية للعام الأكاديمي الحالي" href="#">المقررات</a></li>
+                                            <li><a data-preview="اطلع على رسالتك وبيانات المرشدين " href="#">رسالتى</a></li>
+                                            <li><a data-preview="يمكنك تقديم التماس علي المقررات المطلوبة منك فى العام الدراسي"href="#">الإلتماسات</a></li>
+                                            <li><a data-preview="اطلع على درجات اعمال السنة بتفاصيل مقررات كل فصل دراسي " href="#">درجات أعمال السنة</a></li>
+                                            <li><a data-preview="احصل على درجات العام الدراسي بتفاصيل مقررات كل فصل دراسي"href="#">الدرجات</a></li>
+                                            <li><a data-preview="قدم طلب لفتح امتحان مقرر" href="#">تقديم طلب الإمتحان</a></li>
+                                            <li><a data-preview="سجل رسالتك عن طريق عمل طلب" href="#">تسجيل رسالة</a></li>
+                                            <li><a data-preview="تسجيل المقررات الدراسية لطلاب الساعات المعتمدة" href="#">تسجيل المقررات الرئيسية</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- staff & HR menu -->
+                                    <li>
+                                        <a href="#">أعضاء هيئة التدريس و الموظفين</a>
+
+                                        <ul class="pc-service-menu">
+                                           
+                                            <li class="has-child-menu">
+                                                <a href="#">هيئة التدريس</a>
+                                                <ul class="thired-level">
+                                                    <li><a data-preview="اطلع على مفردات مرتبك" href="#">الراتب</a></li>
+                                                    <li><a data-preview="سجل حضور الطلاب باستخدام رموز الQR الخاصة بهم" href="#">حضور الطلاب</a></li>
+                                                    <li><a data-preview="تابع مواعيد تسجيلك فى البصمة للحضور وللانصراف  " href="#">مواعيد حضور البصمة</a></li>
+                                                    <li><a href="#">الترقيات</a></li>
+                                                    <li><a href="#">الانتدابات والوظائف الخارجية</a></li>
+                                                    <li><a href="#">الجزاءات</a></li>
+                                                    <li><a href="#">الجوائز العلمية</a></li>
+                                                    <li><a href="#">طلب تعيين أو ترقية</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-child-menu">
+                                                <a href="#">الموظفين</a>
+                                                <ul class="thired-level">
+                                                    <li><a data-preview="اطلع على مفردات مرتبك" href="#">الراتب</a></li>
+                                                    <li><a data-preview="تابع مواعيد تسجيلك فى البصمة للحضور وللانصراف  " href="#">مواعيد حضور البصمة</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">الأخبار</a>
+                                        <ul>
+                                            <li><a href="GeneralNews">الأخبار</a></li>
+                                            <li><a href="GeneralEvent">الفعاليات</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">من نحن</a>
+                                        <ul>
+                                            <li><a href="App/About">عن الجامعة</a></li>
+                                            <li><a href="SystemTree">خدمات نظام UMS</a></li>
+                                            <li><a href="App/VideosSection">فيديوهات إرشادية</a></li>
+                                            <li><a href="App/FAQ">اسئلة شائعة</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- MenuHeader End -->
+
+
+    </div>
+    <!-- Mobile Menu Area Start -->
+    <div class="mobile-menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="mobile-menu">
+                        <nav id="dropdown">
+                            <ul>
+                                <li class="active">
+                                    <a href="">الرئيسية</a>
+                                </li>
+                                <li>
+                                    <a href="#">مراكز الجامعة والكليات</a>
+                                    <ul>
+                                        <li class="has-child-menu">
+                                            <a href="#">مؤتمر الجامعة</a>
+                                            <ul class="thired-level">
+                                                <li><a href="RequestServiceUniversityConference">طلب الإشتراك</a></li>
+                                                <li><a href="TrackExternalServices/Track">متابعة طلب الإشتراك</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-child-menu">
+                                            <a href="#">مجلة بحوث التعليم والإبتكار</a>
+                                            <ul class="thired-level">
+                                                <li><a href="ResearchJournalPublication">طلب الإشتراك</a></li>
+                                                <li><a href="TrackExternalServices/Track">متابعة طلب الإشتراك</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child-menu">
+                                            <a href="#">مركز تعليم الكبار</a>
+                                            <ul class="thired-level">
+                                                <li><a href="AdultEducationCenter">طلب الإشتراك</a></li>
+                                                <li><a href="AdultEducationCenter/Track">متابعة طلب الإشتراك</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child-menu">
+                                            <a href="#">مركز ذوى الإعاقة</a>
+                                            <ul class="thired-level">
+                                                <li><a href="StudentDisabilityCenter">التسجيل فى دورة ICDL محلية</a></li>
+                                                <li><a href="AdultEducationCenter/Track">متابعة طلب الإشتراك</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child-menu">
+                                            <a href="#">طلب الالتحاق بالتعلُم المدمج</a>
+                                            <ul class="thired-level">
+                                                <li><a href="BlendedLearningAdmission">طلب الالتحاق</a></li>
+                                                <li><a href="BlendedLearningAdmission/Track">متابعة التسجيل</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child-menu">
+                                            <a href="#">خدمات رابطة الخريجين</a>
+                                            <ul class="thired-level">
+                                                <li><a href="GraduateAssociationSubscription">انضم الان</a></li>
+                                                <li><a href="GeneralQuestionnaire">رأيك يهمنا</a></li>
+                                                <li><a href="GraduateAssociationSubscription/GraduateRamadan">سهرة رمضانية وسحور</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child-menu">
+                                            <a href="#">خدمات مراكز الجامعة</a>
+                                            <ul class="thired-level">
+                                                <li><a href="UniversityCentersService">طلب الخدمة</a></li>
+                                                <li><a href="TrackExternalServices/Track">متابعة طلب الخدمة</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="CourseraApplication">حجز Coursera</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">خدمات الكليات</a>
+                                    <ul>
+                                        <li class="has-child-menu">
+                                            <a href="#">الخريجين</a>
+                                            <ul class="thired-level">
+                                                <li><a href="RequestService">شهادة تخرج عربى او انجليزى</a></li>
+                                                <li><a href="RequestService">استخراج شهاده تقديرات عربى</a></li>
+                                                <li><a href="RequestService">مقابل سحب ملف الخريجين</a></li>
+                                                <li><a href="RequestService">استخراج شهادة تقديرات انجليزى</a></li>
+                                                <li><a href="RequestService">خدمات أخرى</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child-menu">
+                                            <a href="#">تعليم عالى</a>
+                                            <ul class="thired-level">
+                                                <li><a href="RequestService">بيان نجاح</a></li>
+                                                <li><a href="RequestService">رسوم ايقاف قيد او عذر عن عام دراسى كامل</a></li>
+                                                <li><a href="RequestService">شهادة فصل او بيان حاله</a></li>
+                                                <li><a href="RequestService">رسوم امتحان ماده تخلف للطلاب الراسبين</a></li>
+                                                <li><a href="RequestService">خدمات أخرى</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child-menu">
+                                            <a href="#">الدراسات العليا</a>
+                                            <ul class="thired-level">
+                                                <li><a href="RequestService">تسجيل ماجستير نصف عام</a></li>
+                                                <li><a href="RequestService">تسجيل دكتوراه نصف عام</a></li>
+                                                <li><a href="RequestService">مد فتره تسجيل ماجستير او دكتوراه</a></li>
+                                                <li><a href="RequestService">شهادة مؤقته ماجستير عربى او انجليزى</a></li>
+                                                <li><a href="RequestService">مد فتره تسجيل ماجستير او دكتوراه</a></li>
+                                                <li><a href="RequestService">شهادة مؤقته دبلومات عربى او انجليزى</a></li>
+                                                <li><a href="RequestService">خدمات أخرى</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child-menu">
+                                            <a href="#">متابعة طلب الخدمة</a>
+                                            <ul class="thired-level">
+                                                <li><a href="TrackExternalServices/Track">متابعة طلب الخدمة برقم التسجيل</a></li>
+                                                <li><a href="TrackExternalServices/GetExternalServicesHistory">متابعة طلب الخدمة بالرقم القومي</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">التسجيل المبكر</a>
+                                    <ul>
+
+                                        <li class="has-child-menu">
+                                            <a href="#">لخريجي الثانوية العامة</a>
+                                            <ul class="thired-level">
+                                                <li><a href="ApplicationRegister">طلب تسجيل مبكر</a></li>
+                                                <li><a href="ApplicationRegister/Track">متابعة التسجيل</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child-menu">
+                                            <a href="#">لخريجي الجامعة</a>
+                                            <ul class="thired-level">
+                                                <li><a href="PGApplicationRegister">طلب تسجيل</a></li>
+                                                <li><a href="PGApplicationRegister/Track">متابعة التسجيل</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child-menu">
+                                            <a href="#">لخريجى الشهادة المعادلة</a>
+                                            <ul class="thired-level">
+                                                <li><a href="ApplicationRegister">طلب تسجيل مبكر</a></li>
+                                                <li><a href="ApplicationRegister/Track">متابعة التسجيل</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">الطلاب</a>
+
+                                    <ul class="mega-menu-area row pc-service-menu">
+                                        <li class="col">
+                                            <a data-preview="تسجيل المقررات الدراسية لطلاب الساعات المعتمدة" href="#">تسجيل المقررات الدراسية</a>
+                                            <a data-preview="تعرف على جدولك للفصل الدراسى الحالى" href="#">جدولي</a>
+                                            <a data-preview="احصل على رمز QR لاستخدامه في تسجيل الحضور سواء فى المحاضرات او الامتحانات" href="#">رمز ال QR</a>
+                                            <a data-preview="اطلع على درجات اعمال السنة بتفاصيل مقررات كل فصل دراسي"href="#">درجات أعمال السنة</a>
+                                            <a data-preview="يستطيع طلاب الساعات المعتمدة تقديم طلب للانسحاب من المقررات الدراسية" href="#">طلب انسحاب من مقرر</a>
+                                            <a data-preview="يمكنك معرفة اذا كان لديك أية انذارات أكاديمية" href="#">انذار أكاديمى</a>
+                                            <a data-preview="تعرف على تفاصيل دورات التربية العسكرية" href="#">بيانات دورة التربية العسكرية</a>
+                                        </li>
+                                        <li class="col">
+                                            <a data-preview="يمكنك تقديم التماس علي المقررات المطلوبة منك فى العام الدراسي" href="#">الإلتماسات</a>
+                                            <a data-preview="التشعيب لأقسام الكلية" href="#">التشعيب</a>
+                                            <a data-preview="اطلع على مقرراتك الدراسية للعام الأكاديمي الحالي" href="#">المقررات</a>
+                                            <a data-preview="احصل على درجات العام الدراسي بتفاصيل مقررات كل فصل دراسي" href="#">الدرجات</a>
+                                            <a data-preview="طلب فتح مقرر للتسجيل" href="#">طلب فتح مقرر للتسجيل</a>
+                                            <a data-preview="اطلع على جوائزك" href="#">الجوائز</a>
+                                            <a data-preview="التسجيل في دورة التربية العسكرية للطلاب الذكور" href="#">دورات التربية العسكرية المسجلة</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">الدراسات العليا</a>
+                                    <ul class="pc-service-menu">
+                                        <li><a data-preview="اطلع على مقرراتك الدراسية للعام الأكاديمي الحالي" href="#">المقررات</a></li>
+                                        <li><a data-preview="اطلع على رسالتك وبيانات المرشدين "href="#">رسالتى</a></li>
+                                        <li><a data-preview="يمكنك تقديم التماس علي المقررات المطلوبة منك فى العام الدراسي" href="#">الإلتماسات</a></li>
+                                        <li><a data-preview="اطلع على درجات اعمال السنة بتفاصيل مقررات كل فصل دراسي " href="#">درجات أعمال السنة</a></li>
+                                        <li><a data-preview="احصل على درجات العام الدراسي بتفاصيل مقررات كل فصل دراسي" href="#">الدرجات</a></li>
+                                        <li><a data-preview="قدم طلب لفتح امتحان مقرر" href="#">تقديم طلب الإمتحان</a></li>
+                                        <li><a data-preview="سجل رسالتك عن طريق عمل طلب" href="#">تسجيل رسالة</a></li>
+                                        <li><a data-preview="تسجيل المقررات الدراسية لطلاب الساعات المعتمدة " href="#">تسجيل المقررات الرئيسية</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">أعضاء هيئة التدريس و الموظفين</a>
+
+                                    <ul class="pc-service-menu">
+
+                                        <li class="has-child-menu">
+                                            <a href="#">هيئة التدريس</a>
+                                            <ul class="thired-level">
+                                                <li><a data-preview="اطلع على مفردات مرتبك" href="#">الراتب</a></li>
+                                                <li><a data-preview="سجل حضور الطلاب باستخدام رموز الQR الخاصة بهم" href="#">حضور الطلاب</a></li>
+                                                <li><a data-preview="تابع مواعيد تسجيلك فى البصمة للحضور وللانصراف  " href="#">مواعيد حضور البصمة</a></li>
+                                                <li><a href="#">الترقيات</a></li>
+                                                <li><a href="#">الانتدابات والوظائف الخارجية</a></li>
+                                                <li><a href="#">الجزاءات</a></li>
+                                                <li><a href="#">الجوائز العلمية</a></li>
+                                                <li><a href="#">طلب تعيين أو ترقية</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child-menu">
+                                            <a href="#">الموظفين</a>
+                                            <ul class="thired-level">
+                                                <li><a data-preview="اطلع على مفردات مرتبك" href="#">الراتب</a></li>
+                                                <li><a data-preview="تابع مواعيد تسجيلك فى البصمة للحضور وللانصراف  " href="#">مواعيد حضور البصمة</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="GeneralNews">الأخبار</a>
+                                </li>
+                                <li>
+                                    <a href="#">من نحن</a>
+                                    <ul class="pc-service-menu">
+                                        <li><a href="App/About">عن الجامعة</a></li>
+                                        <li><a href="SystemTree">خدمات نظام UMS</a></li>
+                                        <li><a href="App/VideosSection">فيديوهات إرشادية</a></li>
+                                        <li><a href="App/FAQ">اسئلة شائعة</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<script>
+    const menuItems = document.querySelectorAll('.pc-service-menu a');
+    menuItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            var previewText = item.getAttribute('data-preview');
+            const preview = document.createElement('div');
+            preview.classList.add('preview');
+            preview.id = 'preview'
+            item.appendChild(preview);
+            preview.textContent = previewText;
+            preview.classList.add('show', 'fadeIn');
+        });
+
+        item.addEventListener('mouseleave', () => {
+            const preview = document.getElementById('preview');
+            preview.classList.remove('show');
+            item.removeChild(preview);
+        });
+    });
+
+    const mobileMenuItems = document.querySelectorAll('.mobile-service-menu a');
+    mobileMenuItems.forEach(item => {
+        const li = document.createElement('li');
+        const ul = document.createElement('ul');
+        ul.classList.add('preview-ul');
+        const a = document.createElement('a');
+        a.textContent = item.getAttribute('data-preview');
+        a.style.color = '#fafafa'
+        a.style.backgroundColor = '#002147'
+        li.appendChild(a);
+        ul.appendChild(li);
+        item.insertAdjacentElement('afterend', ul);
+    });
+    var itemInfoToggles = document.querySelectorAll('.preview-ul ~ a')
+    itemInfoToggles.forEach(item => {
+        item.textContent = "..."
+    })
+</script>        <!--Inner Header Start -->
+
+<!-- Inner Page Banner Area Start Here -->
+<div class="inner-page-banner-area" style="background-image: url('../../assets/images/banner1.jpg');">
+    <div class="container" style="max-height: 0px !important;">
+        <div class="pagination-area" style="margin-top:15rem">
+            <h1>تسجيل الدخول</h1>
+            <ul>
+                <li><a href="">الرئيسية</a> -</li>
+                <li>تسجيل الدخول</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Inner Page Banner Area End Here -->
+        <!-- PageBody Start -->
+        
+
+<style>
+    .registration-page-area .pLace-order {
+        text-align: center !important;
+    }
+
+    a:hover {
+        color: #fdc800;
+    }
+</style>
+
+<div class="">
+    <div class="registration-page-area">
+        <div id="start" class="container card-shadow p-5 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h1 class=" text-center" style="color:#002147;">تسجيل الدخول</h1>
+            <div class="registration-details-area inner-page-padding">
+                
+                <form id="LoginForm" action="UserInformation.html">
+                    <input name="__RequestVerificationToken" type="hidden" value="KwVwMIGMHANHNOboKsN-4P71fLoH3KIo_7FZWOnTKF2eXmDDB1yKncR2DqllKjzorekNCr3GTu3zedDUP1rCdubC-40Lg-HRh52wVWzhjr41" />
+                    <div class="row center">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label style="color:#002147;" class="control-label h5" for="first-name">اسم المستخدم</label>
+                                <br />
+                                <label id="name-error" style="display: none; color: red; transition: all 0.2s;">من فضلك أكتب فقط الجزء قبل علامة @ و اختر النطاق من القائمة على اليمين</label>
+                                <input type="text" id="user-name" name="LoginName" required class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label style="color:#002147;" class="control-label h5" for="first-name">كلمة المرور</label>
+                                <input type="password" name="password" required id="pass" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12">
+                            <span style="color:#002147;" onclick="shPassword(this)"> <input data-val="true" data-val-required="The RememberMe field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />اظهار كلمة المرور </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="pLace-order mt-30 flex-center">
+                                <button id="submitButton" type="submit" class="default-big-btn w-50">تسجيل الدخول</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6">
+                                <div class="pLace-order mt-30 flex-center">
+                                    <a class="" style="font-weight:800; color:#0059bf" href="LogInRequest">اضغط هنا، إن لم تتمكن من تسجيل الدخول</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6">
+                                <div class="pLace-order mt-30 flex-center">
+                                    <a class="" style="font-weight:800; color:#0059bf" href="ResetPassword">لا تستطيع تذكر كلمة المرور الخاصة بك</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+$(document).ready(function() {
+            function validateCredentials() {
+                var username = $('#user-name').val();
+                var password = $('#pass').val();
+                if (username === '30211212101813' && password === 'Aadham00$') {
+                    $('#submitButton').prop('disabled', false);
+                } else {
+                    $('#submitButton').prop('disabled', true);
+                }
+            }
+
+            // Validate on input change
+            $('#user-name, #pass').on('input', function() {
+                validateCredentials();
+            });
+
+            // Validate on form load
+            validateCredentials();
+        });
+</script>
+<script>
+
+
+
+    $(document).ready(function () {
+        var element = document.getElementsByClassName("k-dropdown");
+        element[0].classList.add("w-100");
+        var targetElement = $("#start");
+        var offsetTop = targetElement.offset().top;
+    $("html, body").animate({
+        scrollTop: offsetTop
+    }, 500); 
+    });
+    function shPassword(e) {
+        var x = document.getElementById("pass");
+        if (x.type === "password") {
+            x.type = "text";
+        }
+        else {
+            x.type = "password";
+        }
+    }
+    $(window).on("load", function () {
+        const selectedDomainName = localStorage.getItem("SelectedDomainName");
+        if (selectedDomainName) {
+            var dropdownlist = $("#DomainName").data("kendoDropDownList");
+            dropdownlist.value(selectedDomainName);
+        }
+    })
+</script>
+
+        <!-- PageBody End -->
+
+        <div id="footer-div">
+            <div class="endpage-divider"></div>
+            
+
+<style>
+    .footer-bottom-social li {
+      display: inline-block;
+      font-size: 14px;
+      border-right: 1px solid #BDBDBD;
+      margin-right: 15px;
+      padding-right: 15px;
+    }
+    .footer-bottom-social li a,.footer-bottom-social li{
+        color: white !important;
+    }
+    .footer-sticky{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    }
+</style>
+
+<!-- FooterBottom Start -->
+<div class="footer-area-bottom ">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <p class="text-white font_18">&copy; FCIS-AinShams 2020 - 2024 &nbsp; </p>
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                <ul class="footer-bottom-social">
+                    <li><a href="App/TermsAndConditions">شروط الاستخدام</a></li>
+                    <li><a href="App/Privacy">سياسية الخصوصية</a></li>
+                    <li><a href="App/FAQ">اسئلة شائعة</a></li>
+                    <li><a href="App/CustomerServiceCharter">ميثاق خدمة المتعاملين</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FooterBottom End -->
+
+        </div>
+
+    </div>
+
+    
+
+    <script src="assets/js/plugins.js" type="text/javascript"></script>
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- WOW JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Nivo slider js -->
+    <script src="assets/vendor/AR/slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script src="assets/vendor/AR/slider/home.js" type="text/javascript"></script>
+    <!-- Meanmenu Js -->
+    <script src="assets/js/jquery.meanmenu.min.js" type="text/javascript"></script>
+    <!-- Srollup js -->
+    <script src="assets/js/jquery.scrollUp.min.js" type="text/javascript"></script>
+    <!-- jquery.counterup js -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- Countdown js -->
+    <script src="assets/js/jquery.countdown.min.js" type="text/javascript"></script>
+    <!-- Isotope js -->
+    <script src="assets/js/isotope.pkgd.min.js" type="text/javascript"></script>
+    <!-- Select2 Js -->
+    <script src="assets/js/select2.min.js" type="text/javascript"></script>
+    <!-- Nouislider Js -->
+    <script src="assets/vendor/AR/noUiSlider/nouislider.min.js" type="text/javascript"></script>
+    <!-- Validator js -->
+    <script src="assets/js/validator.min.js" type="text/javascript"></script>
+    <!-- Magic Popup js -->
+    <script src="assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <!-- Gridrotator js -->
+    <script src="assets/js/jquery.gridrotator.js" type="text/javascript"></script>
+    <!-- Custom Js -->
+        <script src="assets/js/main-rtl.js" type="text/javascript"></script>
+
+
+    <script>
+         $(document).ready(function () {
+            var tempdataval = ``
+            if (tempdataval != null && tempdataval != '')
+            {
+                Swal.fire({
+                    icon: 'error',
+                   // title: 'Error',
+                    text: tempdataval,
+                })
+            }
+
+            var tempsuccess = ``
+            if (tempsuccess != null && tempsuccess != '')
+            {
+                Swal.fire({
+                    icon: 'success',
+                   // title: 'Success',
+					text: tempsuccess,
+                })
+            }
+            //textToSpeech()
+        })
+    </script>
+
+    <script src="Scripts/jquery.validate.min.js"></script>
+
+    <script src="Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    
+
+
+</body>
+<!-- Body End -->
+</html>
+<script>
+
+    function generateUrl(url, params) {
+        var i = 0, key;
+        for (key in params) {
+            if (i === 0) {
+                url += "?";
+            } else {
+                url += "&";
+            }
+            url += key;
+            url += '=';
+            url += params[key];
+            i++;
+        }
+        return url;
+    }
+</script>
