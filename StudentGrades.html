@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:url" content="https://ums.asu.edu.eg/" />
+    <meta property="og:image" content="images/logoums (1).png" />
+    <meta property="og:description" content="Digital Management System of Ain Shams University" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="640" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>الدرجات | منصة الجامعة الذكية </title>
+
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="assets/css/AR/normalize.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/AR/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/AR/bootstrap.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/AR/animate.min.css">
+    <!-- Font-awesome CSS-->
+    <link rel="stylesheet" href="assets/fontawesome-free-6.1.1-web/css/all.min.css" />
+    <link rel="stylesheet" href="assets/fontawesome-free-6.1.1-web/css/fontawesome.min.css" />
+    <!-- Owl Caousel CSS -->
+    <link rel="stylesheet" href="assets/vendor/AR/OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendor/AR/OwlCarousel/owl.theme.default.min.css">
+    <!-- Main Menu CSS -->
+    <link rel="stylesheet" href="assets/css/AR/meanmenu.min.css">
+    <!-- nivo slider CSS -->
+    <link rel="stylesheet" href="assets/vendor/AR/slider/css/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="assets/vendor/AR/slider/css/preview.css" type="text/css" media="screen" />
+    <!-- Datetime Picker Style CSS -->
+    <link rel="stylesheet" href="assets/css/AR/jquery.datetimepicker.css">
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="assets/css/AR/select2.min.css">
+    <!-- Magic popup CSS -->
+    <link rel="stylesheet" href="assets/css/AR/magnific-popup.css">
+    <!-- Switch Style CSS -->
+    <link rel="stylesheet" href="assets/css/AR/hover-min.css">
+    <!-- ReImageGrid CSS -->
+    <link rel="stylesheet" href="assets/css/AR/reImageGrid.css">
+    <!-- Nouislider Style CSS -->
+    <link rel="stylesheet" href="assets/vendor/AR/noUiSlider/nouislider.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/AR/style.css">
+
+
+
+    <link href="Content/fontawesome-all.css" rel="stylesheet" />
+    <!--Kendo-->
+    <link href="Content/kendo/2018.3.1017/kendo.common-bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/kendo/2018.3.1017/kendo.mobile.all.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/kendo/2018.3.1017/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/kendo/2018.3.1017/kendo.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/kendo/2018.3.1017/kendo.dataviz.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!--Kendo custom styles-->
+    <style>
+        .k-dropdown .k-state-focused,
+        .k-filebrowser-dropzone,
+        .k-list>.k-state-hover,
+        .k-listbox .k-item:hover:not(.k-state-disabled),
+        .k-mobile-list .k-edit-label.k-check:active,
+        .k-mobile-list .k-item>.k-label:active,
+        .k-mobile-list .k-item>.k-link:active,
+        .k-mobile-list .k-recur-view .k-check:active,
+        .k-pager-wrap .k-link:hover,
+        .k-scheduler .k-scheduler-toolbar ul li.k-state-hover,
+        .k-splitbar-horizontal-hover:hover,
+        .k-splitbar-vertical-hover:hover,
+        .k-state-hover,
+        .k-state-hover:hover {
+            background-color: #0021473d;
+        }
+
+        .k-list>.k-state-focused.k-state-selected,
+        .k-listview>.k-state-focused.k-state-selected,
+        .k-state-focused.k-state-selected,
+        td.k-state-focused.k-state-selected {
+            box-shadow: inset 0 0 10px 3px #002147;
+        }
+
+        .k-draghandle.k-state-selected:hover,
+        .k-ghost-splitbar-horizontal,
+        .k-ghost-splitbar-vertical,
+        .k-list>.k-state-highlight,
+        .k-list>.k-state-selected,
+        .k-marquee-color,
+        .k-panel>.k-state-selected,
+        .k-scheduler .k-scheduler-toolbar .k-state-selected,
+        .k-scheduler .k-today.k-state-selected,
+        .k-state-selected,
+        .k-state-selected:link,
+        .k-state-selected:visited,
+        .k-tool.k-state-selected {
+            background-color: #002147;
+            border-color: #002147;
+        }
+
+        .k-link:link,
+        .k-link:visited,
+        .k-nav-current.k-state-hover .k-link {
+            color: #002147;
+        }
+    </style>
+    <link href="Content/kendo/2018.3.1017/kendo.rtl.min.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="Scripts/modernizr-2.8.3.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="Scripts/kendo/2018.3.1017/jszip.min.js"></script>
+    <script src="Scripts/kendo/2018.3.1017/kendo.all.min.js"></script>
+    <script src="Scripts/kendo/2018.3.1017/kendo.dropdownlist.min.js"></script>
+    <script src="Scripts/kendo/2018.3.1017/kendo.aspnetmvc.min.js"></script>
+    <script src="Scripts/modernizr-2.8.3.js"></script>
+    <script src="Scripts/kendo.modernizr.custom.js"></script>
+
+
+    <!-- BEGIN SWEETALERT -->
+    <link href="assets/SweetAlert/sweetalert2.min.css" rel="stylesheet" />
+    <script src="assets/SweetAlert/sweetalert2.min.js"></script>
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+
+    <script src="assets/SweetAlert/sweetalert.min.js"></script>
+    <!-- Owl Cauosel JS -->
+    <script src="assets/vendor/AR/OwlCarousel/owl.carousel.min.js" type="text/javascript"></script>
+</head>
+<!-- Head End -->
+<!-- Body Start -->
+
+<body dir="rtl">
+    <div id="preloader"></div>
+
+    <div id="wrapper" style="position: relative;">
+
+        <!-- Header Start -->
+
+        <style>
+            .navbar-nav {
+                flex-direction: row !important;
+            }
+        </style>
+        <link href="assets/css/Menu.css" rel="stylesheet" />
+        <header>
+            <div id="header1" class="header2-area">
+
+
+                <script src="assets/js/Language.js"></script>
+                <style>
+                    .main-menu-area .header-search {
+                        margin: 0px 0px !important;
+                    }
+                </style>
+                <!-- TopHeader Start -->
+                <div class="header-top-area">
+                    <div class="container">
+                        <div class="top-bar-border">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                                    <div class="header-top-left">
+                                        <ul class="Mobile-Hidden">
+                                            <li><img style="height:25px;" src="images/arms_of_Egypt_(Official).svg" />
+                                            </li>
+                                            <li style="text-transform:capitalize;"><i class="fa fa-play-circle"
+                                                    aria-hidden="true"></i><a href="App/VideosSection">فيديوهات
+                                                    إرشادية</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="header-top-right">
+                                        <ul class="main-menu-area">
+                                            <li>
+                                                <div class="header-search d-none d-lg-block">
+                                                    <form action="Search/GetSearchResult" method="GET">
+                                                        <input type="text" class="search-form" name="UserQuery"
+                                                            placeholder="بحث" required="">
+                                                        <a href="#" class="search-button" id="search-button"><i
+                                                                class="fa fa-search" aria-hidden="true"></i></a>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="login-btn-area" href="index.html" id="logout-button"><i
+                                                        class="fa fa-lock"></i> تسجيل الخروج</a>
+                                            </li>
+
+
+                                            <li><a class="login-btn-area"
+                                                    onclick="SelectedIndexChanged('en'); location.reload();" href="#">
+                                                    <img src="images/Flags/gb.png" alt="English">English</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TopHeader End -->
+
+
+                <!-- MenuHeader Start -->
+                <div class="main-menu-area bg-textPrimary" id="sticker">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-3 col-md-3">
+                                <a href=""><img class="img-responsive" src="images/logoums (1).png" alt="logo"></a>
+                            </div>
+                            <div class="col-xl-7 col-lg-7 col-md-7">
+                                <nav id="desktop-nav">
+                                    <ul style="text-align:center;">
+                                        <li class=""><a href="/UserInformation/MyAccount"> <span class="title">الصفحة
+                                                    الرئيسية</span></a></li>
+                                        <li class=""><a href="/Services"> <span class="title">خدمات عامة</span></a></li>
+                                        <li class=""><a href="javascript:;"> <span>خدمات دراسية</span><span
+                                                    class="nav-icon nav-arrow"></span></a>
+                                            <ul class="mega-menu-area sub-mega-menu">
+                                                <li><a href="/MilitaryStudentFamilyDetails"> <span class="title">بيانات
+                                                            التجنيد</span></a></li>
+                                                <li><a href="/UserInformation/CurrentCourse"> <span
+                                                            class="title">المقررات</span></a><a href="/Schedule"> <span
+                                                            class="title">الجدول</span></a><a
+                                                        href="/UserInformation/AllStudentCourseQRs"> <span
+                                                            class="title">لجان الاختبارات : رموز ال QR</span></a><a
+                                                        href="/YearWorkGradesForStudent"> <span class="title">درجات
+                                                            اعمال السنة</span></a><a href="StudentGrades.html"> <span
+                                                            class="title">الدرجات</span></a></li>
+                                                <li><a href="/RegisterElectiveCourse/Registration"> <span
+                                                            class="title">تسجيل المقررات الدراسية</span></a><a
+                                                        href="/OpenCourseRequest"> <span class="title">طلب فتح مقرر
+                                                            للتسجيل</span></a><a href="/WithdrawCourseRequest"> <span
+                                                            class="title">طلب انسحاب من مقرر</span></a><a
+                                                        href="/Home/Appeal"> <span class="title">الالتماسات</span></a><a
+                                                        href="/StudentGraduationRequirement"> <span
+                                                            class="title">متطلبات الجامعه</span></a></li>
+                                                <li><a href="/Bifurcation"> <span class="title">التشعيب</span></a><a
+                                                        href="/Awards"> <span class="title">الجوائز</span></a><a
+                                                        href="/UserInformation/StudentWarnings"> <span
+                                                            class="title">انذار أكاديمى</span></a><a
+                                                        href="/MilitaryEducationCourseRegistration"> <span
+                                                            class="title">تسجيل دورة التربية العسكرية</span></a><a
+                                                        href="/MilitaryCoursePreview"> <span class="title">بيانات دورة
+                                                            التربية العسكرية</span></a>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a href="javascript:;"> <span>الشكاوى / المقترحات</span><span
+                                                    class="nav-icon nav-arrow"></span></a>
+                                            <ul>
+                                                <li class=" "><a href="/Complaint/ComplaintList"> <span
+                                                            class="title">الشكاوى / المقترحات</span></a></li>
+                                                <li class=" "><a href="/GeneralQuestionnaire"> <span class="title">رأيك
+                                                            يهمنا</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a href="javascript:;"> <span>سجل المدفوعات</span><span
+                                                    class="nav-icon nav-arrow"></span></a>
+                                            <ul>
+                                                <li class=" "><a href="/Home/Payment"> <span class="title">المدفوعات
+                                                            المستحقة</span></a></li>
+                                                <li class=" "><a href="/Home/History"> <span class="title">سجل
+                                                            التعاملات</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a href="/InnerAnnouncement"> <span
+                                                    class="title">الأخبار</span></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-xl-3 col-lg-2 col-md-2">
+                                <nav id="desktop-nav">
+                                    <ul class="header-user">
+                                        <li>
+                                            <a href="#" dir="rtl"><i class="fa-solid fa-user"
+                                                    style="padding: 0 8px;"></i>ادهم اشرف رشدى ظاهر</a>
+                                            <ul>
+                                                <li><a href="UserInformation.html">الصفحة الشخصية</a></li>
+                                                <li><a href="index.html">تسجيل الخروج</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MenuHeader End -->
+                <div class="mobile-menu-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="mobile-menu">
+                                    <nav id="dropdown">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-user"></i>ادهم اشرف رشدى ظاهر</a>
+                                                <ul>
+                                                    <li><a href="UserInformation.html">الصفحة الشخصية</a></li>
+                                                    <li><a href="index.html">تسجيل الخروج</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class=""><a href="/UserInformation/MyAccount"> <span
+                                                        class="title">الصفحة الرئيسية</span></a></li>
+                                            <li class=""><a href="/Services"> <span class="title">خدمات عامة</span></a>
+                                            </li>
+                                            <li class=""><a href="javascript:;"> <span>خدمات دراسية</span><span
+                                                        class="nav-icon nav-arrow"></span></a>
+                                                <ul class="mega-menu-area sub-mega-menu">
+                                                    <li><a href="/MilitaryStudentFamilyDetails"> <span
+                                                                class="title">بيانات التجنيد</span></a></li>
+                                                    <li><a href="/UserInformation/CurrentCourse"> <span
+                                                                class="title">المقررات</span></a><a href="/Schedule">
+                                                            <span class="title">الجدول</span></a><a
+                                                            href="/UserInformation/AllStudentCourseQRs"> <span
+                                                                class="title">لجان الاختبارات : رموز ال QR</span></a><a
+                                                            href="/YearWorkGradesForStudent"> <span class="title">درجات
+                                                                اعمال السنة</span></a><a href="StudentGrades.html">
+                                                            <span class="title">الدرجات</span></a></li>
+                                                    <li><a href="/RegisterElectiveCourse/Registration"> <span
+                                                                class="title">تسجيل المقررات الدراسية</span></a><a
+                                                            href="/OpenCourseRequest"> <span class="title">طلب فتح مقرر
+                                                                للتسجيل</span></a><a href="/WithdrawCourseRequest">
+                                                            <span class="title">طلب انسحاب من مقرر</span></a><a
+                                                            href="/Home/Appeal"> <span
+                                                                class="title">الالتماسات</span></a><a
+                                                            href="/StudentGraduationRequirement"> <span
+                                                                class="title">متطلبات الجامعه</span></a></li>
+                                                    <li><a href="/Bifurcation"> <span class="title">التشعيب</span></a><a
+                                                            href="/Awards"> <span class="title">الجوائز</span></a><a
+                                                            href="/UserInformation/StudentWarnings"> <span
+                                                                class="title">انذار أكاديمى</span></a><a
+                                                            href="/MilitaryEducationCourseRegistration"> <span
+                                                                class="title">تسجيل دورة التربية العسكرية</span></a><a
+                                                            href="/MilitaryCoursePreview"> <span class="title">بيانات
+                                                                دورة التربية العسكرية</span></a>
+                                                </ul>
+                                            </li>
+                                            <li class=""><a href="javascript:;"> <span>الشكاوى / المقترحات</span><span
+                                                        class="nav-icon nav-arrow"></span></a>
+                                                <ul>
+                                                    <li class=" "><a href="/Complaint/ComplaintList"> <span
+                                                                class="title">الشكاوى / المقترحات</span></a></li>
+                                                    <li class=" "><a href="/GeneralQuestionnaire"> <span
+                                                                class="title">رأيك يهمنا</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class=""><a href="javascript:;"> <span>سجل المدفوعات</span><span
+                                                        class="nav-icon nav-arrow"></span></a>
+                                                <ul>
+                                                    <li class=" "><a href="/Home/Payment"> <span class="title">المدفوعات
+                                                                المستحقة</span></a></li>
+                                                    <li class=" "><a href="/Home/History"> <span class="title">سجل
+                                                                التعاملات</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class=""><a href="/InnerAnnouncement"> <span
+                                                        class="title">الأخبار</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Inner Header Start -->
+
+        <!-- Inner Page Banner Area Start Here -->
+        <div class="inner-page-banner-area" style="background-image: url('assets/images/banner1.jpg');">
+            <div class="container" style="max-height: 0px !important;">
+                <div class="pagination-area" style="margin-top:15rem">
+                    <h1>الدرجات</h1>
+                    <ul>
+                        <li><a href="">الرئيسية</a> -</li>
+                        <li>الدرجات</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Page Banner Area End Here -->
+        <!-- PageBody Start -->
+
+
+        <style>
+            .faq-body,
+            .faq-item {
+                background-color: white !important;
+            }
+
+            .price-table-box2 {
+                border-radius: 20px;
+                color: #002147 !important;
+                font-size: 25px !important;
+            }
+
+            .price-table-box2 span {
+                letter-spacing: 0px !important;
+            }
+
+            .hvr-float-shadow {
+                margin-bottom: 25px;
+            }
+        </style>
+        <div>
+            <div class="container card-shadow p-5 mt-5">
+                <div>
+                    <form Id="AcademicYear" action="StudentGrades/CreateModel" method="post">
+
+
+                        <label id="lblAcadmic" style="font-size: medium;">العام الدراسي : </label>
+                        <input class="k-widget k-dropdown k-header" value="2023 - 2024" id="AcademicYearID"
+                            name="AcademicYearID" required="required" type="text" disabled />
+
+                        <label id="lblExamRound" style="font-size: medium;">دورة الاختبار : </label>
+                        <select id="class" class="k-widget k-dropdown k-header m-1">
+                            <option value="may">دور مايو</option>
+                            <option value="jan">دور يناير</option>
+                        </select>
+                        <button type="submit" class="default-big-btn" style="margin-top : 30px; ">عرض</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col col-2"></div>
+                    <div id="section-may" class="col col-8 text-center">
+                        <div class="m-1 border-bottom">
+                            <h4>الادارة المالية</h4>
+                            <h6>تقدير:</h6>
+                            <h4>ج ج</h4>
+                        </div>
+                        <div class="m-1 border-bottom">
+                            <h4>المالية العامة والضرائب</h4>
+                            <h6>تقدير:</h6>
+                            <h4>ج</h4>
+                        </div>
+                        <div class="m-1 border-bottom">
+                            <h4>الاحصاء التطبيقي</h4>
+                            <h6>تقدير:</h6>
+                            <h4>ل</h4>
+                        </div>
+                        <div class="m-1 border-bottom">
+                            <h4>أصول المراجعة</h4>
+                            <h6>تقدير:</h6>
+                            <h4>ل</h4>
+                        </div>
+                        <div class="m-1 border-bottom">
+                            <h4>المحاسبة الادارية</h4>
+                            <h6>تقدير:</h6>
+                            <h4>ج</h4>
+                        </div>
+                        <div class="m-1 border-bottom">
+                            <h4>دراسات تجارية باللغة الانجليزية (احصاء)</h4>
+                            <h6>تقدير:</h6>
+                            <h4>ج ج</h4>
+                        </div>
+                    </div>
+                    <div id="section-jan" class="col col-8 text-center">
+                        <div class="m-1 border-bottom">
+                            <h4>ادارة الموارد البشارية</h4>
+                            <h6>تقدير:</h6>
+                            <h4>م</h4>
+                        </div>
+                        <div class="m-1 border-bottom">
+                            <h4>محاسبة حكومية وهيئات غير هادفة للربح</h4>
+                            <h6>تقدير:</h6>
+                            <h4>ض</h4>
+                        </div>
+                        <div class="m-1 border-bottom">
+                            <h4>أصول التكاليف</h4>
+                            <h6>تقدير:</h6>
+                            <h4>ج</h4>
+                        </div>
+                        <div class="m-1 border-bottom">
+                            <h4>تطبيقات الحاسب</h4>
+                            <h6>تقدير:</h6>
+                            <h4>ج ج</h4>
+                        </div>
+                        <div class="m-1 border-bottom">
+                            <h4>اقتصاد دولي</h4>
+                            <h6>تقدير:</h6>
+                            <h4>ج</h4>
+                        </div>
+                        <div class="m-1 border-bottom">
+                            <h4>دراسات تجارية باللغة الانجليزية (احصاء)</h4>
+                            <h6>تقدير:</h6>
+                            <h4>ض ج</h4>
+                        </div>
+                    </div>
+                    <div class="col col-2"></div>
+                </div>
+            </div>
+
+
+            <script>
+
+                $(document).ready(function () {
+                    $('#class').change(function () {
+                        var selectedValue = $(this).val();
+
+                        if (selectedValue === 'may') {
+                            $('#section-jan').hide();
+                            $('#section-may').show();
+                        } else if (selectedValue === 'jan') {
+                            $('#section-may').hide();
+                            $('#section-jan').show();
+                        }
+                    });
+
+                    // Trigger the change event on page load to set the initial state
+                    $('#class').trigger('change');
+                });
+
+
+                function GetExamRound(e) {
+                    return {
+                        AcademicYearID: $("#AcademicYearID").val()
+                    }
+                }
+            </script>
+
+
+            <!-- PageBody End -->
+
+            <div id="footer-div">
+                <div class="endpage-divider"></div>
+
+
+                <style>
+                    .footer-bottom-social li {
+                        display: inline-block;
+                        font-size: 14px;
+                        border-right: 1px solid #BDBDBD;
+                        margin-right: 15px;
+                        padding-right: 15px;
+                    }
+
+                    .footer-bottom-social li a,
+                    .footer-bottom-social li {
+                        color: white !important;
+                    }
+
+                    .footer-sticky {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                    }
+                </style>
+
+                <!-- FooterBottom Start -->
+                <div class="footer-area-bottom ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                <p class="text-white font_18">&copy; FCIS-AinShams 2020 - 2024 &nbsp; </p>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                                <ul class="footer-bottom-social">
+                                    <li><a href="App/TermsAndConditions">شروط الاستخدام</a></li>
+                                    <li><a href="App/Privacy">سياسية الخصوصية</a></li>
+                                    <li><a href="App/FAQ">اسئلة شائعة</a></li>
+                                    <li><a href="App/CustomerServiceCharter">ميثاق خدمة المتعاملين</a></li>
+                                    <li>عدد الزيارات: 1851825</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FooterBottom End -->
+
+            </div>
+
+        </div>
+
+
+
+        <script src="assets/js/plugins.js" type="text/javascript"></script>
+        <!-- Bootstrap js -->
+        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- WOW JS -->
+        <script src="assets/js/wow.min.js"></script>
+        <!-- Nivo slider js -->
+        <script src="assets/vendor/AR/slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+        <script src="assets/vendor/AR/slider/home.js" type="text/javascript"></script>
+        <!-- Meanmenu Js -->
+        <script src="assets/js/jquery.meanmenu.min.js" type="text/javascript"></script>
+        <!-- Srollup js -->
+        <script src="assets/js/jquery.scrollUp.min.js" type="text/javascript"></script>
+        <!-- jquery.counterup js -->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <!-- Countdown js -->
+        <script src="assets/js/jquery.countdown.min.js" type="text/javascript"></script>
+        <!-- Isotope js -->
+        <script src="assets/js/isotope.pkgd.min.js" type="text/javascript"></script>
+        <!-- Select2 Js -->
+        <script src="assets/js/select2.min.js" type="text/javascript"></script>
+        <!-- Nouislider Js -->
+        <script src="assets/vendor/AR/noUiSlider/nouislider.min.js" type="text/javascript"></script>
+        <!-- Validator js -->
+        <script src="assets/js/validator.min.js" type="text/javascript"></script>
+        <!-- Magic Popup js -->
+        <script src="assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+        <!-- Gridrotator js -->
+        <script src="assets/js/jquery.gridrotator.js" type="text/javascript"></script>
+        <!-- Custom Js -->
+        <script src="assets/js/main-rtl.js" type="text/javascript"></script>
+
+
+        <script>
+            $(document).ready(function () {
+                var tempdataval = ``
+                if (tempdataval != null && tempdataval != '') {
+                    Swal.fire({
+                        icon: 'error',
+                        // title: 'Error',
+                        text: tempdataval,
+                    })
+                }
+
+                var tempsuccess = ``
+                if (tempsuccess != null && tempsuccess != '') {
+                    Swal.fire({
+                        icon: 'success',
+                        // title: 'Success',
+                        text: tempsuccess,
+                    })
+                }
+                //textToSpeech()
+            })
+        </script>
+
+        <script src="Scripts/jquery.validate.min.js"></script>
+
+        <script src="Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+
+</body>
+<!-- Body End -->
+
+</html>
+<script>
+
+    function generateUrl(url, params) {
+        var i = 0, key;
+        for (key in params) {
+            if (i === 0) {
+                url += "?";
+            } else {
+                url += "&";
+            }
+            url += key;
+            url += '=';
+            url += params[key];
+            i++;
+        }
+        return url;
+    }
+</script>
